@@ -4,13 +4,13 @@ import pytest
 
 from unification import reify, var, variables
 
-from kanren.core import run, goaleval
-from kanren.facts import fact
-from kanren.assoccomm import (associative, commutative,
+from logmodpy.core import run, goaleval
+from logmodpy.facts import fact
+from logmodpy.assoccomm import (associative, commutative,
                               groupsizes_to_partition, assocunify, eq_comm,
                               eq_assoc, eq_assoccomm, assocsized, buildo,
                               op_args)
-from kanren.dispatch import dispatch
+from logmodpy.dispatch import dispatch
 
 a = 'assoc_op'
 c = 'comm_op'

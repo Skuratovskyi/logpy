@@ -5,8 +5,8 @@ import pytest
 
 from unification import isvar
 
-from kanren import membero
-from kanren.core import (success, fail, var, run,
+from logmodpy import membero
+from logmodpy.core import (success, fail, var, run,
                          condeseq, eq)
 try:
     import sympy.ntheory.generate as sg

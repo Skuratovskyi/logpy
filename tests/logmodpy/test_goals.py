@@ -2,9 +2,9 @@ from __future__ import absolute_import
 
 from unification import var, isvar
 
-from kanren.goals import (tailo, heado, appendo, seteq, conso, typo,
+from logmodpy.goals import (tailo, heado, appendo, seteq, conso, typo,
                           nullo, itero, isinstanceo, permuteq, membero)
-from kanren.core import run, eq, goaleval, lall, lallgreedy, EarlyGoalError
+from logmodpy.core import run, eq, goaleval, lall, lallgreedy, EarlyGoalError
 
 x, y, z, w = var('x'), var('y'), var('z'), var('w')
 

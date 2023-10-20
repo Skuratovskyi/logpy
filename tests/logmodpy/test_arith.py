@@ -1,7 +1,7 @@
 from unification import var
 
-from kanren import run, membero
-from kanren.arith import lt, gt, lte, gte, add, sub, mul, mod, div
+from logmodpy import run, membero
+from logmodpy.arith import lt, gt, lte, gte, add, sub, mul, mod, div
 
 x = var('x')
 y = var('y')

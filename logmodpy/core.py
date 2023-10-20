@@ -45,7 +45,7 @@ def lall(*goals):
         EarlyGoalError
         earlyorder
 
-    >>> from kanren import lall, membero
+    >>> from logmodpy import lall, membero
     >>> x = var('x')
     >>> run(0, x, lall(membero(x, (1,2,3)), membero(x, (2,3,4))))
     (2, 3)
@@ -60,14 +60,14 @@ def lallgreedy(*goals):
     goals is incorrect. It is faster than lall, but should be used
     with care.
 
-    >>> from kanren import eq, run, membero
+    >>> from logmodpy import eq, run, membero
     >>> x, y = var('x'), var('y')
     >>> run(0, x, lallgreedy((eq, y, set([1]))), (membero, x, y))
     (1,)
     >>> run(0, x, lallgreedy((membero, x, y), (eq, y, {1})))  # doctest: +SKIP
     Traceback (most recent call last):
       ...
-    kanren.core.EarlyGoalError
+    logmodpy.core.EarlyGoalError
     """
     if not goals:
         return success
@@ -87,7 +87,7 @@ def lallgreedy(*goals):
 def lallfirst(*goals):
     """ Logical all - Run goals one at a time
 
-    >>> from kanren import membero
+    >>> from logmodpy import membero
     >>> x = var('x')
     >>> g = lallfirst(membero(x, (1,2,3)), membero(x, (2,3,4)))
     >>> tuple(g({}))
@@ -121,7 +121,7 @@ def lallfirst(*goals):
 def lany(*goals):
     """ Logical any
 
-    >>> from kanren import lany, membero
+    >>> from logmodpy import lany, membero
     >>> x = var('x')
     >>> g = lany(membero(x, (1,2,3)), membero(x, (2,3,4)))
     >>> tuple(g({}))
@@ -232,7 +232,7 @@ def run(n, x, *goals):
     x     - Output variable
     goals - a sequence of goals.  All must be true
 
-    >>> from kanren import run, var, eq
+    >>> from logmodpy import run, var, eq
     >>> x = var()
     >>> run(1, x, eq(x, 1))
     (1,)
@@ -250,7 +250,7 @@ class EarlyGoalError(Exception):
 
     Consider the following case
 
-    >>> from kanren import run, eq, membero, var
+    >>> from logmodpy import run, eq, membero, var
     >>> x, coll = var(), var()
     >>> run(0, x, (membero, x, coll), (eq, coll, (1, 2, 3))) # doctest: +SKIP
 

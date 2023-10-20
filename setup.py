@@ -1,14 +1,14 @@
 from os.path import exists
 from setuptools import setup
 
-setup(name='kanren',
+setup(name='logmodpy',
       version='0.2.3',
       description='Logic Programming in python',
       url='http://github.com/logpy/logpy',
       author='Matthew Rocklin',
       author_email='mrocklin@gmail.com',
       license='BSD',
-      packages=['kanren'],
+      packages=['logmodpy'],
       install_requires=open('requirements.txt').read().split('\n'),
       tests_require=[
           'pytest',

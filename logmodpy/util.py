@@ -1,5 +1,5 @@
 import itertools as it
-from collections import Hashable
+from collections.abc import Hashable
 
 from toolz.compatibility import range, map
 
@@ -72,7 +72,7 @@ def take(n, seq):
 def evalt(t):
     """ Evaluate tuple if unevaluated
 
-    >>> from kanren.util import evalt
+    >>> from logmodpy.util import evalt
     >>> add = lambda x, y: x + y
     >>> evalt((add, 2, 3))
     5
@@ -93,7 +93,7 @@ def intersection(*seqs):
 def groupsizes(total, len):
     """ Groups of length len that add up to total
 
-    >>> from kanren.util import groupsizes
+    >>> from logmodpy.util import groupsizes
     >>> tuple(groupsizes(4, 2))
     ((1, 3), (2, 2), (3, 1))
     """

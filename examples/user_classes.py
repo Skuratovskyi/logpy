@@ -1,7 +1,7 @@
 from account import Account
-from kanren import unifiable, run, var, eq, membero, variables
-from kanren.core import lall
-from kanren.arith import add, gt, sub
+from logmodpy import unifiable, run, var, eq, membero, variables
+from logmodpy.core import lall
+from logmodpy.arith import add, gt, sub
 
 unifiable(Account)  # Register Account class
 

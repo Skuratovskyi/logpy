@@ -24,7 +24,7 @@ def lt(x, y):
 def lor(*goalconsts):
     """ Logical or for goal constructors
 
-    >>> from kanren.arith import lor, eq, gt
+    >>> from logmodpy.arith import lor, eq, gt
     >>> gte = lor(eq, gt)  # greater than or equal to is `eq or gt`
     """
 
@@ -41,11 +41,11 @@ lte = lor(lt, eq)
 def binop(op, revop=None):
     """ Transform binary operator into goal
 
-    >>> from kanren.arith import binop
+    >>> from logmodpy.arith import binop
     >>> import operator
     >>> add = binop(operator.add, operator.sub)
 
-    >>> from kanren import var, run
+    >>> from logmodpy import var, run
     >>> x = var('x')
     >>> next(add(1, 2, x)({}))
     {~x: 3}

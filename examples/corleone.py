@@ -1,9 +1,9 @@
 # Family relationships from The Godfather
 # Translated from the core.logic example found in
-# "The Magical Island of Kanren - core.logic Intro Part 1"
-# http://objectcommando.com/blog/2011/11/04/the-magical-island-of-kanren-core-logic-intro-part-1/
+# "The Magical Island of logmodpy - core.logic Intro Part 1"
+# http://objectcommando.com/blog/2011/11/04/the-magical-island-of-logmodpy-core-logic-intro-part-1/
 
-from kanren import Relation, facts, run, conde, var, eq
+from logmodpy import Relation, facts, run, conde, var, eq
 
 father = Relation()
 mother = Relation()

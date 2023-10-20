@@ -6,7 +6,7 @@ This example builds a small database of the US states.
 The `adjacency` relation expresses which states border each other
 The `coastal` relation expresses which states border the ocean
 """
-from kanren import run, fact, eq, Relation, var
+from logmodpy import run, fact, eq, Relation, var
 
 adjacent = Relation()
 coastal  = Relation()

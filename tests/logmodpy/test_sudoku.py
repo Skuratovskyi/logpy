@@ -1,14 +1,14 @@
 """
 Based off
-https://github.com/holtchesley/embedded-logic/blob/master/kanren/sudoku.ipynb
+https://github.com/holtchesley/embedded-logic/blob/master/logmodpy/sudoku.ipynb
 """
 from __future__ import absolute_import
 
 from unification import var
 
-from kanren import run
-from kanren.core import everyg
-from kanren.goals import permuteq
+from logmodpy import run
+from logmodpy.core import everyg
+from logmodpy.goals import permuteq
 
 
 DIGITS = tuple(range(1, 10))

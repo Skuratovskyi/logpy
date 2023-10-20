@@ -9,8 +9,8 @@ install:
     - pip install -r requirements.txt
 script:
     - git rev-parse HEAD
-    - py.test --cov=kanren -vv kanren
-    - flake8 kanren
+    - py.test --cov=logmodpy -vv logmodpy
+    - flake8 logmodpy
     - flake8 tests
 after_success:
     - if [[ $TRAVIS_PYTHON_VERSION != 'pypy' ]]; then

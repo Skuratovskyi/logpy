@@ -1,6 +1,6 @@
 # flake8: noqa
 """
-kanren is a Python library for logic and relational programming.
+logmodpy is a Python library for logic and relational programming.
 """
 from __future__ import absolute_import
 

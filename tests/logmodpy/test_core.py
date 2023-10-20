@@ -6,11 +6,11 @@ import pytest
 from pytest import raises
 from unification import var
 
-from kanren.goals import membero
-from kanren.core import (run, fail, eq, conde, goaleval, lany, lallgreedy,
+from logmodpy.goals import membero
+from logmodpy.core import (run, fail, eq, conde, goaleval, lany, lallgreedy,
                          lanyseq, earlyorder, EarlyGoalError, lall, earlysafe,
                          lallfirst, condeseq)
-from kanren.util import evalt
+from logmodpy.util import evalt
 
 w, x, y, z = 'wxyz'
 

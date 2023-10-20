@@ -4,9 +4,9 @@ This module provides goals for associative and commutative unification.  It
 accomplishes this through naively trying all possibilities.  This was built to
 be used in the computer algebra systems SymPy and Theano.
 
->>> from kanren import run, var, fact
->>> from kanren.assoccomm import eq_assoccomm as eq
->>> from kanren.assoccomm import commutative, associative
+>>> from logmodpy import run, var, fact
+>>> from logmodpy.assoccomm import eq_assoccomm as eq
+>>> from logmodpy.assoccomm import commutative, associative
 
 >>> # Define some dummy Ops
 >>> add = 'add'
@@ -94,7 +94,7 @@ def assocsized(op, tail, n):
 def makeops(op, lists):
     """ Construct operations from an op and parition lists
 
-    >>> from kanren.assoccomm import makeops
+    >>> from logmodpy.assoccomm import makeops
     >>> makeops('add', [(1, 2), (3, 4, 5)])
     (('add', 1, 2), ('add', 3, 4, 5))
     """
@@ -104,7 +104,7 @@ def makeops(op, lists):
 def partition(tup, part):
     """ Partition a tuple
 
-    >>> from kanren.assoccomm import partition
+    >>> from logmodpy.assoccomm import partition
     >>> partition("abcde", [[0,1], [4,3,2]])
     [('a', 'b'), ('e', 'd', 'c')]
     """
@@ -113,7 +113,7 @@ def partition(tup, part):
 
 def groupsizes_to_partition(*gsizes):
     """
-    >>> from kanren.assoccomm import groupsizes_to_partition
+    >>> from logmodpy.assoccomm import groupsizes_to_partition
     >>> groupsizes_to_partition(2, 3)
     [[0, 1], [2, 3, 4]]
     """
@@ -131,8 +131,8 @@ def groupsizes_to_partition(*gsizes):
 def eq_assoc(u, v, eq=core.eq, n=None):
     """ Goal for associative equality
 
-    >>> from kanren import run, var, fact
-    >>> from kanren.assoccomm import eq_assoc as eq
+    >>> from logmodpy import run, var, fact
+    >>> from logmodpy.assoccomm import eq_assoc as eq
 
     >>> fact(commutative, 'add')    # declare that 'add' is commutative
     >>> fact(associative, 'add')    # declare that 'add' is associative
@@ -161,9 +161,9 @@ def eq_assoc(u, v, eq=core.eq, n=None):
 def eq_comm(u, v, eq=None):
     """ Goal for commutative equality
 
-    >>> from kanren import run, var, fact
-    >>> from kanren.assoccomm import eq_comm as eq
-    >>> from kanren.assoccomm import commutative, associative
+    >>> from logmodpy import run, var, fact
+    >>> from logmodpy.assoccomm import eq_comm as eq
+    >>> from logmodpy.assoccomm import commutative, associative
 
     >>> fact(commutative, 'add')    # declare that 'add' is commutative
     >>> fact(associative, 'add')    # declare that 'add' is associative
@@ -234,9 +234,9 @@ def eq_assoccomm(u, v):
 
     State that operations are associative or commutative with relations
 
-    >>> from kanren.assoccomm import eq_assoccomm as eq
-    >>> from kanren.assoccomm import commutative, associative
-    >>> from kanren import fact, run, var
+    >>> from logmodpy.assoccomm import eq_assoccomm as eq
+    >>> from logmodpy.assoccomm import commutative, associative
+    >>> from logmodpy import fact, run, var
 
     >>> fact(commutative, 'add')    # declare that 'add' is commutative
     >>> fact(associative, 'add')    # declare that 'add' is associative
