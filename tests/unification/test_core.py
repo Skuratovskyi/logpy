@@ -1,6 +1,6 @@
-from logpy.unification.core import unify, reify, _unify, _reify
+from unification.core import unify, reify, _unify, _reify
 
-from logpy.unification import var
+from unification import var
 
 
 def test_reify():

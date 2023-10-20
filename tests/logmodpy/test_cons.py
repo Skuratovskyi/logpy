@@ -3,7 +3,7 @@ from itertools import chain, cycle
 from collections import OrderedDict
 from collections.abc import Iterable
 
-from logpy.logmodpy.cons import cons, ConsPair, car, cdr, is_cons, is_null
+from logmodpy.cons import cons, ConsPair, car, cdr, is_cons, is_null
 
 
 def assert_all_equal(*tests):

@@ -8,7 +8,7 @@ setup(name='logmodpy',
       author='Matthew Rocklin',
       author_email='mrocklin@gmail.com',
       license='BSD',
-      packages=['logmodpy'],
+      packages=['logmodpy', 'unification'],
       install_requires=open('requirements.txt').read().split('\n'),
       tests_require=[
           'pytest',

@@ -3,7 +3,7 @@ from functools import partial
 from .util import (dicthash, interleave, take, multihash, unique, evalt)
 from toolz import groupby, map
 
-from logpy.unification import reify, unify, var  # noqa
+from unification import reify, unify, var  # noqa
 
 #########
 # Goals #

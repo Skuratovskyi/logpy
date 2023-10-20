@@ -4,11 +4,11 @@ https://github.com/holtchesley/embedded-logic/blob/master/logmodpy/sudoku.ipynb
 """
 from __future__ import absolute_import
 
-from logpy.unification import var
+from unification import var
 
-from logpy.logmodpy import run
-from logpy.logmodpy.core import everyg
-from logpy.logmodpy.goals import permuteq
+from logmodpy import run
+from logmodpy.core import everyg
+from logmodpy.goals import permuteq
 
 
 DIGITS = tuple(range(1, 10))

@@ -1,4 +1,4 @@
-from logpy.unification.utils import freeze, hashable, raises
+from unification.utils import freeze, hashable, raises
 
 def test_hashable():
     assert hashable(2)

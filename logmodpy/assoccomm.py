@@ -29,8 +29,8 @@ be used in the computer algebra systems SymPy and Theano.
 ((3, 2),)
 """
 
-from logpy.unification.utils import transitive_get as walk
-from logpy.unification import isvar
+from unification.utils import transitive_get as walk
+from unification import isvar
 
 
 from . import core

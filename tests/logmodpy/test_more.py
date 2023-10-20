@@ -1,9 +1,9 @@
 from collections import namedtuple
 
-from logpy.unification.more import (unify_object, reify_object,
+from unification.more import (unify_object, reify_object,
         unifiable)
-from logpy.unification import var, variables
-from logpy.unification.core import unify, reify, _unify, _reify
+from unification import var, variables
+from unification.core import unify, reify, _unify, _reify
 
 class Foo(object):
         def __init__(self, a, b):

@@ -1,4 +1,4 @@
-from logpy.unification import unify, reify
+from unification import unify, reify
 
 from .util import intersection
 from toolz import merge
