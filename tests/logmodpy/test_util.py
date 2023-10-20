@@ -1,4 +1,4 @@
-from logmodpy.util import (take, unique, interleave, intersection, groupsizes,
+from logpy.logmodpy.util import (take, unique, interleave, intersection, groupsizes,
                          dicthash, hashable, multihash)
 
 

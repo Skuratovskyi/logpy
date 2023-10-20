@@ -1,7 +1,7 @@
-from unification import var
+from logpy.unification import var
 
-from logmodpy import run, membero
-from logmodpy.arith import lt, gt, lte, gte, add, sub, mul, mod, div
+from logpy.logmodpy import run, membero
+from logpy.logmodpy.arith import lt, gt, lte, gte, add, sub, mul, mod, div
 
 x = var('x')
 y = var('y')

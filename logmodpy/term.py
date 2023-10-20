@@ -1,5 +1,5 @@
-from unification import unify, reify
-from unification.core import _unify, _reify
+from logpy.unification import unify, reify
+from logpy.unification.core import _unify, _reify
 
 from .dispatch import dispatch
 

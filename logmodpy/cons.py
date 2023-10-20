@@ -8,7 +8,7 @@ from multipledispatch import dispatch
 
 from toolz import drop, last
 
-from unification.core import unify, _unify, reify, _reify
+from logpy.unification.core import unify, _unify, reify, _reify
 
 
 def first(x):

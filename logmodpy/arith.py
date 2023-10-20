@@ -1,6 +1,6 @@
 import operator
 
-from unification import isvar
+from logpy.unification import isvar
 
 from .core import (eq, EarlyGoalError, lany)
 

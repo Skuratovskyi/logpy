@@ -2,7 +2,7 @@ import collections
 import operator
 from itertools import permutations
 
-from unification import isvar, var, reify, unify
+from logpy.unification import isvar, var, reify, unify
 
 from .core import (eq, EarlyGoalError, conde, condeseq, lany, lallgreedy, lall,
                    fail, success)

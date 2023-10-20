@@ -1,6 +1,6 @@
-from unification.match import *
-from unification.utils import raises, xfail
-from unification.core import var
+from logpy.unification.match import *
+from logpy.unification.utils import raises, xfail
+from logpy.unification.core import var
 
 def identity(x):
     return x

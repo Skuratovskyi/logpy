@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 
-from unification import var
+from logpy.unification import var
 
-from logmodpy.core import run, conde
-from logmodpy.facts import Relation, fact, facts
+from logpy.logmodpy.core import run, conde
+from logpy.logmodpy.facts import Relation, fact, facts
 
 
 def test_relation():

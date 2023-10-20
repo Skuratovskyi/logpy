@@ -2,15 +2,15 @@ from __future__ import absolute_import
 
 import pytest
 
-from unification import reify, var, variables
+from logpy.unification import reify, var, variables
 
-from logmodpy.core import run, goaleval
-from logmodpy.facts import fact
-from logmodpy.assoccomm import (associative, commutative,
+from logpy.logmodpy.core import run, goaleval
+from logpy.logmodpy.facts import fact
+from logpy.logmodpy.assoccomm import (associative, commutative,
                               groupsizes_to_partition, assocunify, eq_comm,
                               eq_assoc, eq_assoccomm, assocsized, buildo,
                               op_args)
-from logmodpy.dispatch import dispatch
+from logpy.logmodpy.dispatch import dispatch
 
 a = 'assoc_op'
 c = 'comm_op'

@@ -1,10 +1,10 @@
 from __future__ import absolute_import
 
-from unification import var, isvar
+from logpy.unification import var, isvar
 
-from logmodpy.goals import (tailo, heado, appendo, seteq, conso, typo,
+from logpy.logmodpy.goals import (tailo, heado, appendo, seteq, conso, typo,
                           nullo, itero, isinstanceo, permuteq, membero)
-from logmodpy.core import run, eq, goaleval, lall, lallgreedy, EarlyGoalError
+from logpy.logmodpy.core import run, eq, goaleval, lall, lallgreedy, EarlyGoalError
 
 x, y, z, w = var('x'), var('y'), var('z'), var('w')
 

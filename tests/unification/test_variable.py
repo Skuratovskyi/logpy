@@ -1,4 +1,4 @@
-from unification.variable import isvar, var, vars, variables
+from logpy.unification.variable import isvar, var, vars, variables
 
 def test_isvar():
     assert not isvar(3)

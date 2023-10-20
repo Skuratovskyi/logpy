@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 
-from unification import var, unify
+from logpy.unification import var, unify
 
-from logmodpy.term import term, operator, arguments, unifiable_with_term
-from logmodpy.dispatch import dispatch
+from logpy.logmodpy.term import term, operator, arguments, unifiable_with_term
+from logpy.logmodpy.dispatch import dispatch
 
 
 def test_arguments():

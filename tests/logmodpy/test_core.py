@@ -4,13 +4,13 @@ from itertools import count
 
 import pytest
 from pytest import raises
-from unification import var
+from logpy.unification import var
 
-from logmodpy.goals import membero
-from logmodpy.core import (run, fail, eq, conde, goaleval, lany, lallgreedy,
+from logpy.logmodpy.goals import membero
+from logpy.logmodpy.core import (run, fail, eq, conde, goaleval, lany, lallgreedy,
                          lanyseq, earlyorder, EarlyGoalError, lall, earlysafe,
                          lallfirst, condeseq)
-from logmodpy.util import evalt
+from logpy.logmodpy.util import evalt
 
 w, x, y, z = 'wxyz'
 
